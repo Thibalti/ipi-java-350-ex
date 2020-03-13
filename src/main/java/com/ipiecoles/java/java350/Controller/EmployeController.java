@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/employes")
-public class EmployeController {
+public class EmployeController {/*
     @Autowired
     private EmployeRepository employeRepository;
 
     @GetMapping("{/id}")
     public Employe getEmploye(@PathVariable("id")Long id){
         return employeRepository.findById(id).get();
-    }
+    }*/
 }
