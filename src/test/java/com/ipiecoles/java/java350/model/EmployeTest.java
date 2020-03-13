@@ -133,6 +133,11 @@ public class EmployeTest {
 
     })
     public void getNbRTTTest(){
+        //Given
+
+        //When
+
+        //Then
 
     }
 
