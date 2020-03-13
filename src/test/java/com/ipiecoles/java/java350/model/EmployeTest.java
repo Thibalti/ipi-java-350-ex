@@ -103,4 +103,17 @@ public class EmployeTest {
 
     }
 
+    @Test
+    public void augmenterSalaireTest(){
+        //Given
+        Employe e = new Employe();
+        e.setSalaire(1000d);
+
+        //When
+        Double newSalaire = e.augmenterSalaire(5d);
+
+        //Then
+        Assertions.assertEquals(1050d, newSalaire);
+    }
+
 }
