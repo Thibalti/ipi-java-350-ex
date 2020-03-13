@@ -1,0 +1,17 @@
+2020-03-12 09:37:39 - INFO  - Starting Java350Application on FR-L3356909 with PID 17652 (C:\GitHub\ipi-java-350-ex\target\classes started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-12 09:37:39 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-12 09:37:43 - INFO  - Started Java350Application in 4.228 seconds (JVM running for 6.355)
+2020-03-12 10:36:19 - INFO  - Starting Java350Application on FR-L3356909 with PID 14744 (C:\GitHub\ipi-java-350-ex\target\classes started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-12 10:36:19 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-12 12:46:59 - INFO  - Starting EmployeRepositoryTest on FR-L3356909 with PID 12284 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-12 12:46:59 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-12 12:47:04 - INFO  - Started EmployeRepositoryTest in 5.586 seconds (JVM running for 8.767)
+2020-03-12 16:32:32 - INFO  - Starting EmployeControllerTest on FR-L3356909 with PID 1472 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-12 16:32:32 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-12 16:32:36 - INFO  - Started EmployeControllerTest in 4.034 seconds (JVM running for 6.681)
+2020-03-12 16:37:02 - INFO  - Starting EmployeControllerTest on FR-L3356909 with PID 19356 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-12 16:37:02 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-12 16:37:05 - INFO  - Started EmployeControllerTest in 3.144 seconds (JVM running for 6.828)
+2020-03-12 16:38:44 - INFO  - Starting EmployeControllerTest on FR-L3356909 with PID 7500 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-12 16:38:44 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-12 16:38:48 - INFO  - Started EmployeControllerTest in 3.872 seconds (JVM running for 6.357)
