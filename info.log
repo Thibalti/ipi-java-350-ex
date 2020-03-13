@@ -194,3 +194,15 @@
 2020-03-13 15:15:19 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00346', dateEmbauche=2020-03-13, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé  
 2020-03-13 15:15:19 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
 2020-03-13 15:15:19 - ERROR - L'employé de matricule M00001 existe déjà en BDD
+2020-03-13 15:24:09 - INFO  - Starting EmployeRepositoryTest on FR-L3356909 with PID 11040 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-13 15:24:09 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-13 15:24:14 - INFO  - Started EmployeRepositoryTest in 6.133 seconds (JVM running for 9.127)
+2020-03-13 15:24:35 - INFO  - Starting EmployeRepositoryTest on FR-L3356909 with PID 10880 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-13 15:24:35 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-13 15:24:40 - INFO  - Started EmployeRepositoryTest in 5.987 seconds (JVM running for 8.833)
+2020-03-13 15:25:20 - INFO  - Starting EmployeRepositoryTest on FR-L3356909 with PID 7152 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-13 15:25:20 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-13 15:25:25 - INFO  - Started EmployeRepositoryTest in 5.995 seconds (JVM running for 8.838)
+2020-03-13 15:26:12 - INFO  - Starting EmployeRepositoryTest on FR-L3356909 with PID 2092 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-13 15:26:12 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-13 15:26:17 - INFO  - Started EmployeRepositoryTest in 6.37 seconds (JVM running for 9.911)
