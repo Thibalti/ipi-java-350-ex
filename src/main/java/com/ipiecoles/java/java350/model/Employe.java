@@ -1,9 +1,8 @@
 package com.ipiecoles.java.java350.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.ipiecoles.java.java350.exception.EmployeException;
+
+import javax.persistence.*;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.Objects;
@@ -74,12 +73,13 @@ public class Employe {
         return getNbRtt(LocalDate.now());
     }
 
+
     public Integer getNbRtt(LocalDate d){
         int i1 = d.isLeapYear() ? 365 : 366;
         int var = 104;
         switch (LocalDate.of(d.getYear(),1,1).getDayOfWeek()){
             case THURSDAY: if(d.isLeapYear()) var =  var + 1; break;
-            case FRIDAY: if(d.isLeapYear()) var =  var + 2; else var =  var + 1;
+            case FRIDAY: if(d.isLeapYear()) var =  var + 2; else var =  var + 1; break;
             case SATURDAY: var = var + 1; break;
         }
         int monInt = (int) Entreprise.joursFeries(d).stream().filter(localDate -> localDate.getDayOfWeek().getValue() <= DayOfWeek.FRIDAY.getValue()).count();
@@ -131,12 +131,16 @@ public class Employe {
     }
 
     //Augmenter salaire
-    public Double augmenterSalaire(double pourcentage){
+    public Double augmenterSalaire(double pourcentage) throws EmployeException, EntityExistsException {
 
         Double salaire = this.getSalaire() + (this.getSalaire() * (pourcentage/100));
         this.setSalaire(salaire);
 
-        return this.salaire;
+        if(salaire == 0){
+            throw new EmployeException("Impossible d'avoir un salaire à 0.00");
+        } else {
+
+        return this.salaire;}
 
 
 

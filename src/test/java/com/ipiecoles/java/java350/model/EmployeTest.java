@@ -1,5 +1,6 @@
 package com.ipiecoles.java.java350.model;
 
+import com.ipiecoles.java.java350.exception.EmployeException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -104,16 +105,35 @@ public class EmployeTest {
     }
 
     @Test
-    public void augmenterSalaireTest(){
+    public void augmenterSalaireTest() throws EmployeException {
         //Given
         Employe e = new Employe();
         e.setSalaire(1000d);
+        Employe e2 = new Employe();
+        e2.setSalaire(1000d);
+        Employe e3 = new Employe();
+        e3.setSalaire(1000d);
 
         //When
         Double newSalaire = e.augmenterSalaire(5d);
+        Double newSalaire2 = e2.augmenterSalaire(-10d);
+
+
 
         //Then
         Assertions.assertEquals(1050d, newSalaire);
+        Assertions.assertEquals(900d, newSalaire2);
+        EmployeException employe = Assertions.assertThrows(EmployeException.class, () -> e3.augmenterSalaire(-100d));
+        Assertions.assertEquals("Impossible d'avoir un salaire à 0.00", employe.getMessage());
+
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+
+    })
+    public void getNbRTTTest(){
+
     }
 
 }
