@@ -12,6 +12,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.persistence.EntityExistsException;
 import java.time.LocalDate;
@@ -22,6 +24,7 @@ import java.util.Arrays;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
+@SpringBootTest
 public class EmployeServiceTest {
 
     @InjectMocks
@@ -29,6 +32,11 @@ public class EmployeServiceTest {
 
     @Mock
     EmployeRepository employeRepository;
+
+    @Autowired
+    private EmployeRepository employeRepository2;
+    @Autowired
+    private EmployeService employeService2;
 
     @BeforeEach
     public void setup(){
@@ -261,9 +269,8 @@ public class EmployeServiceTest {
     @Test
     public void calculPerformanceCommercialTestCas5() throws EmployeException {
         //Given
-        Employe e1 = new Employe("Doe", "John", "C12345", LocalDate.now(), Entreprise.SALAIRE_BASE, 1, 1.0);
+        employeRepository2.save(new Employe("Doe", "John", "C12345", LocalDate.now(), Entreprise.SALAIRE_BASE, 1, 1.0));
 
-        when(employeRepository.findByMatricule("C12345")).thenReturn(e1);
 
         //Cas 4
         String matricule = "C12345";
@@ -272,11 +279,11 @@ public class EmployeServiceTest {
 
         //When
         //Cas 4
-        employeService.calculPerformanceCommercial(matricule, caTraite, objectifCa);
+        employeService2.calculPerformanceCommercial(matricule, caTraite, objectifCa);
 
         //Then
         //Cas 4
-        Assertions.assertEquals(6, employeRepository.findByMatricule("C12345").getPerformance());
+        Assertions.assertEquals(6, employeRepository2.findByMatricule("C12345").getPerformance());
 
     }
 }
