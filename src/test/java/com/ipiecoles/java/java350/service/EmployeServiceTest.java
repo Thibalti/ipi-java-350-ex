@@ -24,7 +24,6 @@ import java.util.Arrays;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-@SpringBootTest
 public class EmployeServiceTest {
 
     @InjectMocks
@@ -33,10 +32,6 @@ public class EmployeServiceTest {
     @Mock
     EmployeRepository employeRepository;
 
-    @Autowired
-    private EmployeRepository employeRepository2;
-    @Autowired
-    private EmployeService employeService2;
 
     @BeforeEach
     public void setup(){
@@ -266,24 +261,5 @@ public class EmployeServiceTest {
 
     }
 
-    @Test
-    public void calculPerformanceCommercialTestCas5() throws EmployeException {
-        //Given
-        employeRepository2.save(new Employe("Doe", "John", "C12345", LocalDate.now(), Entreprise.SALAIRE_BASE, 1, 1.0));
 
-
-        //Cas 4
-        String matricule = "C12345";
-        Long caTraite = 125l;
-        Long objectifCa = 100l;
-
-        //When
-        //Cas 4
-        employeService2.calculPerformanceCommercial(matricule, caTraite, objectifCa);
-
-        //Then
-        //Cas 4
-        Assertions.assertEquals(6, employeRepository2.findByMatricule("C12345").getPerformance());
-
-    }
 }

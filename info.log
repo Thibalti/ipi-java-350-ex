@@ -230,3 +230,24 @@
 2020-03-13 15:56:45 - INFO  - Starting EmployeServiceTest on FR-L3356909 with PID 17928 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
 2020-03-13 15:56:45 - INFO  - No active profile set, falling back to default profiles: default
 2020-03-13 15:56:53 - INFO  - Started EmployeServiceTest in 8.276 seconds (JVM running for 11.756)
+2020-03-13 16:17:09 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356909 with PID 10392 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-13 16:17:09 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-13 16:17:17 - INFO  - Started EmployeServiceIntegrationTest in 8.261 seconds (JVM running for 11.117)
+2020-03-13 16:18:00 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 16:18:00 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00346', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 16:18:00 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 16:18:00 - ERROR - Limite des 100000 matricules atteinte !
+2020-03-13 16:18:00 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 16:18:00 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00001', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 16:18:00 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2020-03-13 16:18:00 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00346', dateEmbauche=2020-03-13, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé  
+2020-03-13 16:18:00 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 16:18:00 - ERROR - L'employé de matricule M00001 existe déjà en BDD
+2020-03-13 16:18:02 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356909 with PID 7432 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-13 16:18:02 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-13 16:18:13 - INFO  - Started EmployeServiceIntegrationTest in 11.723 seconds (JVM running for 19.252)
+2020-03-13 16:18:13 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2020-03-13 16:18:13 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='T12346', dateEmbauche=2020-03-13, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé  
+2020-03-13 16:18:14 - INFO  - Starting EmployeRepositoryTest on FR-L3356909 with PID 7432 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-13 16:18:14 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-13 16:18:15 - INFO  - Started EmployeRepositoryTest in 1.588 seconds (JVM running for 21.708)
