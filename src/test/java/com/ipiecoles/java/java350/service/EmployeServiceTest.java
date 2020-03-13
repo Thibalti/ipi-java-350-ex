@@ -2,6 +2,7 @@ package com.ipiecoles.java.java350.service;
 
 import com.ipiecoles.java.java350.exception.EmployeException;
 import com.ipiecoles.java.java350.model.Employe;
+import com.ipiecoles.java.java350.model.Entreprise;
 import com.ipiecoles.java.java350.model.NiveauEtude;
 import com.ipiecoles.java.java350.model.Poste;
 import com.ipiecoles.java.java350.repository.EmployeRepository;
@@ -151,6 +152,131 @@ public class EmployeServiceTest {
 
         //Given
         Assertions.assertEquals(1000, salaireMoyen);
+
+    }
+
+    @Test
+    public void calculPerformanceCommercialTest() throws EmployeException{
+        //Given
+        Employe e1 = new Employe("Doe", "John", "C12345", LocalDate.now(), Entreprise.SALAIRE_BASE, 1, 1.0);
+
+        when(employeRepository.findByMatricule("C98765")).thenReturn(null);
+        when(employeRepository.findByMatricule("C12345")).thenReturn(e1);
+
+        //matricule non présent en BDD
+        String matricule1 = "C98765";
+        Long caTraite1 = 100l;
+        Long objectifCa1 = 100l;
+
+        //caTraite null
+        String matricule2 = "C12345";
+        Long caTraite2 = null;
+        Long objectifCa2 = 100l;
+
+        //obejctifCa null
+        String matricule3 = "C12345";
+        Long caTraite3 = 100l;
+        Long objectifCa3 = null;
+
+        //matricule ne commençant pas par C
+        String matricule4 = "T00001";
+        Long caTraite4 = 100l;
+        Long objectifCa4 = 100l;
+
+        //Cas 2
+        String matricule5 = "C12345";
+        Long caTraite5 = 80l;
+        Long objectifCa5 = 100l;
+
+
+
+        //When
+        //Cas 2
+         employeService.calculPerformanceCommercial(matricule5, caTraite5, objectifCa5);
+
+
+        //Then
+        EmployeException employe1 = Assertions.assertThrows(EmployeException.class, () -> employeService.calculPerformanceCommercial(matricule1, caTraite1, objectifCa1));
+        Assertions.assertEquals("Le matricule "+matricule1+" n'existe pas !", employe1.getMessage());
+
+        EmployeException employe2 = Assertions.assertThrows(EmployeException.class, () -> employeService.calculPerformanceCommercial(matricule2, caTraite2, objectifCa2));
+        Assertions.assertEquals("Le chiffre d'affaire traité ne peut être négatif ou null !", employe2.getMessage());
+
+        EmployeException employe3 = Assertions.assertThrows(EmployeException.class, () -> employeService.calculPerformanceCommercial(matricule3, caTraite3, objectifCa3));
+        Assertions.assertEquals("L'objectif de chiffre d'affaire ne peut être négatif ou null !", employe3.getMessage());
+
+        EmployeException employe4 = Assertions.assertThrows(EmployeException.class, () -> employeService.calculPerformanceCommercial(matricule4, caTraite4, objectifCa4));
+        Assertions.assertEquals("Le matricule ne peut être null et doit commencer par un C !", employe4.getMessage());
+
+        //Cas2
+        Assertions.assertEquals(2, employeRepository.findByMatricule("C12345").getPerformance());
+
+
+    }
+
+    @Test
+    public void calculPerformanceCommercialTestCas3() throws EmployeException{
+        //Given
+        Employe e1 = new Employe("Doe", "John", "C12345", LocalDate.now(), Entreprise.SALAIRE_BASE, 1, 1.0);
+
+        when(employeRepository.findByMatricule("C12345")).thenReturn(e1);
+
+        //Cas 3
+        String matricule6 = "C12345";
+        Long caTraite6 = 100l;
+        Long objectifCa6 = 100l;
+
+        //When
+        //Cas 3
+        employeService.calculPerformanceCommercial(matricule6, caTraite6, objectifCa6);
+
+        //Then
+        //Cas 3
+        Assertions.assertEquals(2, employeRepository.findByMatricule("C12345").getPerformance());
+
+    }
+
+    @Test
+    public void calculPerformanceCommercialTestCas4() throws EmployeException {
+        //Given
+        Employe e1 = new Employe("Doe", "John", "C12345", LocalDate.now(), Entreprise.SALAIRE_BASE, 1, 1.0);
+
+        when(employeRepository.findByMatricule("C12345")).thenReturn(e1);
+
+        //Cas 4
+        String matricule7 = "C12345";
+        Long caTraite7 = 110l;
+        Long objectifCa7 = 100l;
+
+        //When
+        //Cas 4
+        employeService.calculPerformanceCommercial(matricule7, caTraite7, objectifCa7);
+
+        //Then
+        //Cas 4
+        Assertions.assertEquals(3, employeRepository.findByMatricule("C12345").getPerformance());
+
+    }
+
+    @Test
+    public void calculPerformanceCommercialTestCas5() throws EmployeException {
+        //Given
+        Employe e1 = new Employe("Doe", "John", "C12345", LocalDate.now(), Entreprise.SALAIRE_BASE, 1, 1.0);
+
+        when(employeRepository.findByMatricule("C12345")).thenReturn(e1);
+
+        //Cas 4
+        String matricule = "C12345";
+        Long caTraite = 125l;
+        Long objectifCa = 100l;
+
+        //When
+        //Cas 4
+        employeService.calculPerformanceCommercial(matricule, caTraite, objectifCa);
+
+        //Then
+        //Cas 4
+        Assertions.assertEquals(6, employeRepository.findByMatricule("C12345").getPerformance());
 
     }
 }

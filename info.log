@@ -113,3 +113,84 @@
 2020-03-13 12:22:13 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356909 with PID 17648 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
 2020-03-13 12:22:13 - INFO  - No active profile set, falling back to default profiles: default
 2020-03-13 12:22:21 - INFO  - Started EmployeServiceIntegrationTest in 8.659 seconds (JVM running for 11.809)
+2020-03-13 12:39:44 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356909 with PID 11328 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-13 12:39:44 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-13 12:39:53 - INFO  - Started EmployeServiceIntegrationTest in 9.758 seconds (JVM running for 12.463)
+2020-03-13 12:40:54 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356909 with PID 13056 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-13 12:40:54 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-13 12:41:02 - INFO  - Started EmployeServiceIntegrationTest in 8.423 seconds (JVM running for 11.399)
+2020-03-13 12:41:55 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356909 with PID 10792 (started by thibault.dumas in C:\GitHub\ipi-java-350-ex)
+2020-03-13 12:41:55 - INFO  - No active profile set, falling back to default profiles: default
+2020-03-13 12:42:04 - INFO  - Started EmployeServiceIntegrationTest in 9.139 seconds (JVM running for 12.402)
+2020-03-13 12:47:48 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 12:47:48 - ERROR - L'employé de matricule M00001 existe déjà en BDD
+2020-03-13 14:01:01 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:01:01 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00346', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 14:01:01 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:01:01 - ERROR - Limite des 100000 matricules atteinte !
+2020-03-13 14:01:01 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:01:01 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00001', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 14:01:01 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2020-03-13 14:01:01 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00346', dateEmbauche=2020-03-13, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé  
+2020-03-13 14:01:01 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:01:01 - ERROR - L'employé de matricule M00001 existe déjà en BDD
+2020-03-13 14:03:50 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:03:50 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00346', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 14:03:50 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:03:50 - ERROR - Limite des 100000 matricules atteinte !
+2020-03-13 14:03:50 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:03:50 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00001', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 14:03:50 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2020-03-13 14:03:50 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00346', dateEmbauche=2020-03-13, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé  
+2020-03-13 14:03:50 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:03:50 - ERROR - L'employé de matricule M00001 existe déjà en BDD
+2020-03-13 14:16:10 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:16:10 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00346', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 14:16:10 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:16:10 - ERROR - Limite des 100000 matricules atteinte !
+2020-03-13 14:16:10 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:16:10 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00001', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 14:16:10 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2020-03-13 14:16:10 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00346', dateEmbauche=2020-03-13, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé  
+2020-03-13 14:16:10 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:16:10 - ERROR - L'employé de matricule M00001 existe déjà en BDD
+2020-03-13 14:18:06 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:18:06 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00346', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 14:18:06 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:18:06 - ERROR - Limite des 100000 matricules atteinte !
+2020-03-13 14:18:06 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:18:06 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00001', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 14:18:06 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2020-03-13 14:18:06 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00346', dateEmbauche=2020-03-13, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé  
+2020-03-13 14:18:06 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:18:06 - ERROR - L'employé de matricule M00001 existe déjà en BDD
+2020-03-13 14:47:49 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:47:49 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00346', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 14:47:49 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:47:49 - ERROR - Limite des 100000 matricules atteinte !
+2020-03-13 14:47:49 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:47:49 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00001', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 14:47:49 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2020-03-13 14:47:49 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00346', dateEmbauche=2020-03-13, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé  
+2020-03-13 14:47:49 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 14:47:49 - ERROR - L'employé de matricule M00001 existe déjà en BDD
+2020-03-13 15:13:06 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 15:13:06 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00346', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 15:13:06 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 15:13:06 - ERROR - Limite des 100000 matricules atteinte !
+2020-03-13 15:13:06 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 15:13:06 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00001', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 15:13:06 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2020-03-13 15:13:06 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00346', dateEmbauche=2020-03-13, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé  
+2020-03-13 15:13:06 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 15:13:06 - ERROR - L'employé de matricule M00001 existe déjà en BDD
+2020-03-13 15:15:19 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 15:15:19 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00346', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 15:15:19 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 15:15:19 - ERROR - Limite des 100000 matricules atteinte !
+2020-03-13 15:15:19 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 15:15:19 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='M00001', dateEmbauche=2020-03-13, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé  
+2020-03-13 15:15:19 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2020-03-13 15:15:19 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00346', dateEmbauche=2020-03-13, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé  
+2020-03-13 15:15:19 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2020-03-13 15:15:19 - ERROR - L'employé de matricule M00001 existe déjà en BDD
