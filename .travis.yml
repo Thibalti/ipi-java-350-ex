@@ -2,7 +2,7 @@ language: java
 
 addons:
   sonarcloud:
-    organization: "Thibalti-github"
+    organization: "Thibalti"
     apt:
       update: true
       sources:
